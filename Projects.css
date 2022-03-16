@@ -1,0 +1,105 @@
+body{ 
+    background-color: aliceblue;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+h1,h2, h3{
+    text-align: center;
+    padding: 10px;
+}
+
+h2{
+    color: rgb(34, 167, 41);
+    text-decoration: underline;
+    
+}
+nav {
+    border: 10px;
+    background-color: rgb(34, 167, 41);
+    color: white;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ 
+a:hover{
+    color: #9ec928;
+}
+.Websites li a:hover{
+    color: yellowgreen;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.Websites li a{
+    color: rgb(34, 167, 41);
+    display: block;
+    padding: 20px;
+    text-decoration: underline;
+
+}
+.Websites ul {
+    list-style-type: none;
+    margin: 30px;
+    padding: 10px;
+  }
+  
+
+p{
+    text-align: justify;
+    padding: 10px;
+    color: rgb(34, 167, 41);
+    line-height: 30px;
+    font-size: 25px;
+    
+}
+
+
+.SingletabImages img, .chatbotImages img, .HMSImages img{
+    width: 100%;
+    height: auto;
+}
+
+.SingletabImages{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 50px;
+    padding: 50px;
+}
+
+
+.chatbotImages, .HMSImages{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    nav {
+        border: 10px;
+        background-color: rgb(34, 167, 41);
+        color: white;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+.SingletabImages, .chatbotImages,.HMSImages, Websites{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
